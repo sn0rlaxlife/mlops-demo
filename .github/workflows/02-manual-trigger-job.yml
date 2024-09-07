@@ -25,6 +25,8 @@ jobs:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: List files in the repository
       run: ls -R
+    - name: Replace placeholder in job.yml
+      run: sed -i 's|PLACEHOLDER_FOR_URI|${{secrets.AZURE_ML_DATASTORE_URI}}|g' src/job.yml
     - name: Change to source directory where yml is located
       run: cd ./src
     - name: Run Azure ML Job
