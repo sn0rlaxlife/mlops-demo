@@ -25,5 +25,6 @@ jobs:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: run job
       run: bash -x ./src/job.yml
+      working-directory: mlops-demo/src
 
 
