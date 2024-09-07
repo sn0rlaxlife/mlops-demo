@@ -30,7 +30,7 @@ jobs:
     - name: Change to source directory where yml is located
       run: cd ./src
     - name: Run Azure ML Job
-      run: az ml job create -f job.yml --resource-group rg-dp100-l109eb16186ef4f998c --workspace-name mlw-dp100-l109eb16186ef4f998c
+      run: az ml job create -f job.yml --resource-group <place-holder-rg> --workspace-name <workspace-name>
       working-directory: ./src
 
 
