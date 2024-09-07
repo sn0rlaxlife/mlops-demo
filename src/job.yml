@@ -7,7 +7,7 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: azureml://datastores/experimentation/data/
+    path: "PLACEHOLDER_FOR_URI"
   reg_rate: 0.01
 environment: azureml://registries/azureml/environments/sklearn-1.5/versions/5
 compute: azureml:aml-cluster
