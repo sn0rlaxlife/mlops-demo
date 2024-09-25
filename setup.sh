@@ -37,7 +37,7 @@ az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-ins
 
 # Create data assets
 echo "Create training data asset:"
-az ml data create --type mltable --name "diabetes-dev-folder" --path ./experimentation/data/diabetes-dev.csv
+az ml data create --type mltable --name "diabetes-dev-folder" --path ./experimentation/data/
 
 # Export the Resource Group
 export RESOURCE_GROUP
